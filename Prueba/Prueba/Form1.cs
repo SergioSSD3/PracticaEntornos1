@@ -21,7 +21,11 @@ namespace Prueba
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("hola");
+            string texto;
+            texto = tNombre.Text + " ";
+            texto += tApellidos.Text + " ";
+            texto += tTelf.Text + "\n";
+            textBox1.Text += texto;
         }
     }
     }
