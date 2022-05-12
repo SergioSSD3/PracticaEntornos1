@@ -28,45 +28,95 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.boxdos = new System.Windows.Forms.TextBox();
-            this.buno = new System.Windows.Forms.Button();
-            this.boxuno = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tNombre = new System.Windows.Forms.TextBox();
+            this.tApellidos = new System.Windows.Forms.TextBox();
+            this.tTelf = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // boxdos
+            // button1
             // 
-            this.boxdos.Location = new System.Drawing.Point(299, 185);
-            this.boxdos.Name = "boxdos";
-            this.boxdos.Size = new System.Drawing.Size(202, 22);
-            this.boxdos.TabIndex = 5;
+            this.button1.Location = new System.Drawing.Point(650, 123);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 42);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Guardar";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // buno
+            // textBox1
             // 
-            this.buno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.buno.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buno.Location = new System.Drawing.Point(299, 230);
-            this.buno.Name = "buno";
-            this.buno.Size = new System.Drawing.Size(202, 76);
-            this.buno.TabIndex = 4;
-            this.buno.Text = "Calcular:";
-            this.buno.UseVisualStyleBackColor = false;
-            this.buno.Click += new System.EventHandler(this.buno_Click);
+            this.textBox1.Location = new System.Drawing.Point(57, 171);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(706, 175);
+            this.textBox1.TabIndex = 1;
             // 
-            // boxuno
+            // tNombre
             // 
-            this.boxuno.Location = new System.Drawing.Point(299, 145);
-            this.boxuno.Name = "boxuno";
-            this.boxuno.Size = new System.Drawing.Size(202, 22);
-            this.boxuno.TabIndex = 3;
+            this.tNombre.Location = new System.Drawing.Point(118, 62);
+            this.tNombre.Name = "tNombre";
+            this.tNombre.Size = new System.Drawing.Size(139, 22);
+            this.tNombre.TabIndex = 2;
+            // 
+            // tApellidos
+            // 
+            this.tApellidos.Location = new System.Drawing.Point(355, 62);
+            this.tApellidos.Name = "tApellidos";
+            this.tApellidos.Size = new System.Drawing.Size(139, 22);
+            this.tApellidos.TabIndex = 3;
+            // 
+            // tTelf
+            // 
+            this.tTelf.Location = new System.Drawing.Point(624, 62);
+            this.tTelf.Name = "tTelf";
+            this.tTelf.Size = new System.Drawing.Size(139, 22);
+            this.tTelf.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(56, 65);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 16);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Nombre";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(285, 68);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 16);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Apellidos";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(557, 65);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(61, 16);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Teléfono";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.boxdos);
-            this.Controls.Add(this.buno);
-            this.Controls.Add(this.boxuno);
+            this.ClientSize = new System.Drawing.Size(836, 400);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tTelf);
+            this.Controls.Add(this.tApellidos);
+            this.Controls.Add(this.tNombre);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -76,9 +126,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox boxdos;
-        private System.Windows.Forms.Button buno;
-        private System.Windows.Forms.TextBox boxuno;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tNombre;
+        private System.Windows.Forms.TextBox tApellidos;
+        private System.Windows.Forms.TextBox tTelf;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
